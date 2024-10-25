@@ -1,0 +1,38 @@
+.inicial {
+    position: absolute;
+    font-family: 'poppins-regular';
+}
+
+.inicial h1 {
+    font-size: 7rem;
+    text-align: right;
+    position: relative;
+    transform: translateX(8rem);
+    color: var(--cor-2);
+    line-height: 8rem;
+}
+
+.inicial h1:after {
+    content: '';
+    display: block;
+    width: 44%;
+    height: 1.8rem;
+    background: var(--linear-gradient);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(4rem);
+}
+
+.inicial h1 span {
+    font-size: 12rem;
+}
+
+.inicial .simular {
+    width: 25%;
+    border-radius: 2rem;
+    background: var(--cor-5);
+    font-weight: bold;
+    position: absolute;
+    transform: translateX(70rem) translateY(10rem);
+}

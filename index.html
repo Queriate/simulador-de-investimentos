@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Investimentos com Aportes Mensais</title>
+  <link rel="stylesheet" href="assets/css/pages/index/index.css">
+</head>
+
+<body>
+
+  <section class="inicial">
+    <h1>simulador de <br>
+      <span>Investimentos</span>
+    </h1>
+
+    <button class="simular">simular</button>
+  </section>
+
+  <div class="container">
+    <h1>Simulador de Investimentos - CDB e Selic com Aportes Mensais</h1>
+
+    <div class="input-group">
+      <label for="valorInvestido">Valor Investido Inicial (R$):</label>
+      <input type="number" id="valorInvestido" placeholder="Ex: 10000">
+    </div>
+
+    <div class="input-group">
+      <label for="aporteMensal">Aporte Mensal (R$):</label>
+      <input type="number" id="aporteMensal" placeholder="Ex: 500">
+    </div>
+
+    <div class="input-group">
+      <label for="taxaJuros">Taxa de Juros Anual (%):</label>
+      <input type="number" id="taxaJuros" placeholder="Ex: 10">
+    </div>
+
+    <div class="input-group">
+      <label for="periodo">Período (meses):</label>
+      <input type="number" id="periodo" placeholder="Ex: 12">
+    </div>
+
+    <div class="input-group">
+      <label for="tipoInvestimento">Tipo de Investimento:</label>
+      <select id="tipoInvestimento">
+        <option value="cdb">CDB</option>
+        <option value="selic">Selic</option>
+      </select>
+    </div>
+
+    <button onclick="calcularRendimento()">Calcular Rendimento</button>
+
+    <div class="resultados">
+      <h2>Resultados:</h2>
+      <p id="rendimentoBruto">Rendimento Bruto: R$ 0,00</p>
+      <p id="rendimentoLiquido">Rendimento Líquido: R$ 0,00</p>
+      <p id="taxaMensal">Taxa Mensal: 0,00%</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
