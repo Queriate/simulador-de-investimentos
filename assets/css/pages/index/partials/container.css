@@ -1,61 +1,67 @@
 .container {
-    display: none;
-    width: 50%;
-    margin: 50px auto;
-    background-color: var;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  .input-group input, select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
-  .resultados {
-    margin-top: 20px;
-  }
-  
-  .resultados h2 {
-    color: #333;
-  }
-  
-  .resultados p {
-    font-size: 18px;
-    color: #555;
-  }
-  
+  display: none;
+  width: 25%;
+  font-family: 'poppins-regular';
+}
+
+.container h1 {
+  text-align: end;
+  color: var(--cor-2);
+  font-size: clamp(1.5rem, 2dvw, 3rem);
+  margin: 0 0 2rem 0;
+}
+
+.container .input-group {
+  margin: 0 0 .5rem 0;
+}
+
+.container .input-group label {
+  display: block;
+  margin: 0 0 .5rem 0;
+  color: var(--cor-4);
+  font-size: clamp(1rem, 2dvw, 1.5rem);
+  font-weight: bold;
+}
+
+.container .input-group input,
+select {
+  width: 100%;
+  padding: 8px;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  background: var(--linear-gradient);
+  color: var(--cor-2);
+  border: none;
+  border-radius: 4px;
+  font-size: clamp(1rem, 1.6dvw, 1.6rem);
+  cursor: pointer;
+  margin: 3rem 0 0 0;
+  transition: .3s ease-in-out;
+}
+
+.container button:hover {
+  transform: scale(1.1);
+}
+
+.container .resultados {
+  margin-top: 20px;
+}
+
+.container .resultados h2 {
+  color: #333;
+}
+
+.container .resultados p {
+  font-size: 18px;
+  color: var(--cor-4);
+}
