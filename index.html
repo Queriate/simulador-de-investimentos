@@ -12,7 +12,7 @@
 
   <div class="container_barra">
     <!-- As barras serão adicionadas dinamicamente pelo JavaScript -->
-</div>
+  </div>
 
 
   <section class="inicial">
@@ -23,27 +23,27 @@
     <button class="simular">simular</button>
   </section>
 
-  <div class="container">
+  <section class="container" id="container">
     <h1>Simulador de Investimentos<br>CDB e Selic com Aportes Mensais</h1>
 
     <div class="input-group">
       <label for="valorInvestido">Valor Investido Inicial (R$):</label>
-      <input type="number" id="valorInvestido" placeholder="Ex: 10000">
+      <input type="text" id="valorInvestido" placeholder="Ex: 100">
     </div>
 
     <div class="input-group">
       <label for="aporteMensal">Aporte Mensal (R$):</label>
-      <input type="number" id="aporteMensal" placeholder="Ex: 500">
+      <input type="text" id="aporteMensal" placeholder="Ex: 500">
     </div>
 
     <div class="input-group">
       <label for="taxaJuros">Taxa de Juros Anual (%):</label>
-      <input type="number" id="taxaJuros" placeholder="Ex: 10">
+      <input type="text" id="taxaJuros" placeholder="Ex: 10,75">
     </div>
 
     <div class="input-group">
       <label for="periodo">Período (meses):</label>
-      <input type="number" id="periodo" placeholder="Ex: 12">
+      <input type="text" id="periodo" placeholder="Ex: 12">
     </div>
 
     <div class="input-group">
@@ -52,20 +52,23 @@
         <option value="cdb">CDB</option>
         <option value="selic">SELIC</option>
       </select>
-    </div>
 
-    <button onclick="calcularRendimento()">Calcular Rendimento</button>
+      <button onclick="calcularRendimento()">Calcular Rendimento</button>
+  </section>
 
-    <div class="resultados">
-      <h2>Resultados:</h2>
-      <p id="rendimentoBruto">Rendimento Bruto: R$ 0,00</p>
-      <p id="rendimentoLiquido">Rendimento Líquido: R$ 0,00</p>
-      <p id="taxaMensal">Taxa Mensal: 0,00%</p>
-    </div>
+  <section class="resultados">
+    <h2>Resultados:</h2>
+    <a href="#conteiner"><img src="assets/files/imgs/voltar.svg" alt="botão voltar"></a>
+    <p id="rendimentoBruto">Rendimento Bruto: R$ 0,00</p>
+    <p id="rendimentoLiquido">Rendimento Líquido: R$ 0,00</p>
+    <p id="taxaMensal">Taxa Mensal: 0,00%</p>
+</section>
 
-    <script src="assets/js/barras.js"></script>
-    <script src="assets/js/calculo.js"></script>
-    <script src="assets/js/sair.js"></script>
+
+  <script src="assets/js/barras.js"></script>
+  <script src="assets/js/calculo.js"></script>
+  <script src="assets/js/sair.js"></script>
+  <script src="assets/js/resultados.js"></script>
 </body>
 
 </html>
