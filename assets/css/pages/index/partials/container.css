@@ -2,6 +2,11 @@
   display: none;
   width: 25%;
   font-family: 'poppins-regular';
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, #FF2E4C, #592B6D) 1;
+  background: rgba(18, 20, 25, 0.5);
+  backdrop-filter: blur(.5rem);
+
 }
 
 .container h1 {
@@ -51,17 +56,4 @@ input:focus {
 
 .container button:hover {
   transform: scale(1.1);
-}
-
-.container .resultados {
-  margin-top: 20px;
-}
-
-.container .resultados h2 {
-  color: #333;
-}
-
-.container .resultados p {
-  font-size: 18px;
-  color: var(--cor-4);
 }
