@@ -39,6 +39,12 @@
     font-weight: bold;
     position: absolute;
     transform: translateX(70rem) translateY(10rem);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.inicial .simular:hover {
+  background: var(--cor-4);
 }
 
 @keyframes slideOutLeft {
