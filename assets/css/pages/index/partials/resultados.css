@@ -1,3 +1,51 @@
 .resultados {
     display: none;
+    font-family: 'poppins-regular';
+    border: 1px solid transparent;
+    border-image: linear-gradient(45deg, #FF2E4C, #592B6D) 1;
+    padding: 5rem 10rem;
+    position: relative;
 }
+
+
+.resultados h2 {
+    color: var(--cor-4);
+    font-size: clamp(1.5rem, 2dvw, 3rem);
+    margin: 0 0 2rem 0;
+    font-style: italic;
+}
+
+.resultados p {
+    color: var(--cor-2);
+    font-size: clamp(1rem, 1dvw, 2.5rem);
+    margin: 0 0 2rem 0;
+    font-weight: bold;
+}
+
+.resultados a img {
+    position: absolute;
+    right: 0;
+    transform: translateX(-2rem) translateY(-3rem);
+}
+
+@keyframes slideOutLeft {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; }
+  }
+  
+  @keyframes slideInRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  .resultados.hidden {
+    animation: slideOutLeft 0.5s forwards;
+    display: none;
+  }
+  
+  /* Estilos da seção container */
+  .resultados.visible {
+    display: flex;
+    flex-direction: column;
+    animation: slideInRight 0.5s forwards;
+  }
